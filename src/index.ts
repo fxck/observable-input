@@ -28,7 +28,7 @@ const getSubjectAndObservable = (instance: Object, propertyKey: string): Subject
 }
 
 export function ObservableInput() {
-  return (target, propertyKey) => {
+  return (target?, propertyKey?) => {
     delete target[propertyKey]
 
     Object.defineProperty(target, propertyKey, {
